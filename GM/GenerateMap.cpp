@@ -33,10 +33,12 @@ void AGenerateMap::IntializedMap()
 			if (y == 0 || y == MapCoord.Y - 1)
 			{
 				GMap[i][y].ObbjectType = ObjectType::DefaultCube;
+				continue;
 			}
 			if (i == MapCoord.X-1)
 			{
 				GMap[i][y].ObbjectType = ObjectType::DefaultCube;
+				continue;
 			}
 		}
 }
